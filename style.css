@@ -2,12 +2,12 @@
     0%{
         }
     25%{
-        transform: translateY(65px);
+        transform: translateY(25px);
         }
     50%{
         }
     75%{
-        transform: translateY(-65px);
+        transform: translateY(-25px);
         }
     100%{
         }
@@ -18,24 +18,32 @@
     margin: 0;
 }
 
+@media only screen and (min-width: 768px) {
+    .balls li {
+        background-color: lightblue;
+        height: 5rem;
+        width: 5rem;
+    }
+}
+
 body {
     box-sizing: border-box;
 }
 
 .container {
     background-color: #373144;
-    border: 40px solid lightslategrey;
+    border: 20px solid lightslategrey;
     display: grid;
-    height: 90vh;
+    height: 95vh;
 }
 .animation-box {
     margin: auto;
-    width: 50%;
+    width: 75%;
 }
 
 .balls {
     list-style-type: none;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
 }
 
@@ -44,19 +52,19 @@ body {
     border: 1px solid #a6bba3;
     border-radius: 100%;
     display: inline-block;
-    margin: 10px;
-    height: 100px;
-    width: 100px;
+    margin: 5px;
+    height: 2em;
+    width: 2em;
 }
 
 #ball-1 {
-    animation: Bounce 2s infinite 0s linear;
+    animation: Bounce 1s infinite 0s linear;
 }
 
 #ball-2 {
-    animation: Bounce 2s infinite .35s linear;
+    animation: Bounce 1s infinite .2s linear;
 }
 
 #ball-3 {
-    animation: Bounce 2s infinite .75s linear;
+    animation: Bounce 1s infinite .4s linear;
 }
